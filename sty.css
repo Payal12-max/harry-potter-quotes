@@ -1,0 +1,117 @@
+/* ============================================
+   🪄 GLOBAL STYLES – Base Theme + Font
+============================================ */
+body {
+  font-family: 'Cinzel Decorative', cursive;
+  background-image: url('harry.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #000;
+  text-align: center;
+  padding: 2rem;
+  transition: background-color 0.4s, color 0.4s, background-image 0.4s;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(212, 208, 208, 0.378);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 5px solid #a37f4b;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#quote-box {
+  background-color: #fff8e7;
+  border: 3px solid #a37f4b;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  min-height: 150px;
+}
+
+/* Fade Animation */
+.fade {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Buttons */
+button {
+  background-color: #813b0d;
+  color: white;
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #42352b;
+  transform: scale(1.05);
+}
+
+/* Favorites List */
+ul#favorites-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#favorites-list li {
+  background-color: #fdf4dc;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border-left: 5px solid #a37f4b;
+  text-align: left;
+}
+
+/* ============================================
+   🌙 DARK MODE – Triggered by .dark-mode
+============================================ */
+body.dark-mode {
+  background-image: url('dark.jpg');
+  background-color: #1c1c1c;
+  color: #f5f5dc;
+}
+
+body.dark-mode .container {
+  background-color: rgba(30, 30, 30, 0.489);
+  border: 3px solid #a37f4b;
+}
+
+body.dark-mode #quote-box {
+  background-color: #292524;
+  border-color: #facc15;
+  color: #fefae0;
+}
+
+body.dark-mode button {
+  background-color: #073a08b5;
+  color: #fefae0;
+}
+
+body.dark-mode button:hover {
+  background-color: #876445;
+}
+
+body.dark-mode ul#favorites-list li {
+  background-color: #3a2f2f;
+  border-left-color: #facc15;
+  color: #fefae0;
+}

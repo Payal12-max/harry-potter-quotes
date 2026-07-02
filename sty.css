@@ -3,7 +3,7 @@
 ============================================ */
 body {
   font-family: 'Cinzel Decorative', cursive;
-  background-image: url('harry.jpg');
+  background-image: url('harry.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -85,7 +85,7 @@ ul#favorites-list li {
    🌙 DARK MODE – Triggered by .dark-mode
 ============================================ */
 body.dark-mode {
-  background-image: url('dark.jpg');
+  background-image: url('dark.png');
   background-color: #1c1c1c;
   color: #f5f5dc;
 }
